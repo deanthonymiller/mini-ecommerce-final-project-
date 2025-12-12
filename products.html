@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mini Store</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-area">
+            <h1>My Mini Store</h1>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="products.html" class="nav-link">Shop</a>
+            <a href="cart.html" class="nav-link">Cart</a>
+            <a href="checkout.html" class="nav-link">Checkout</a>
+            <a href="about.html" class="nav-link">About</a>
+        </nav>
+        <button id="dark-mode-toggle" class="btn header-btn">Dark Mode</button>
+    </header>
+    <main>
+        <h2>Shop All Products</h2>
+        <section class="filter-bar">
+            <label for="category-filter">Filter by Category:</label>
+            <select id="category-filter" name="category-filter">
+                <option value="all">All</option>
+                <option value="clothing">Clothing</option>
+                <option value="accessories">Accessories</option>
+                <option value="electronics">Electronics</option>
+            </select>
+        </section>
+
+        <section class="product-listing">
+            <div class="product-grid">
+                <article class="product-card" data-category="clothing">
+                    <img src="images/product1.png" alt="Red Hoodie" class="product-image" />
+                    <h3 class="product-name">Red Cozy Hoodie</h3>
+                    <p class="product-price">$39.99</p>
+                    <a href="product.html" class="btn">View details</a>
+                </article>
+                <article class="product-card" data-category="clothing">
+                    <img src="images/product2.png" alt="Blue T-shirt" class="product-image" />
+                    <h3 class="product-name">Blue T-shirt</h3>
+                    <p class="product-price">$19.99</p>
+                    <a href="product.html?id=2" class="btn">View details</a>
+                </article>
+
+                <article class="product-card" data-category="accessories">
+                    <img src="images/product3.png" alt="Cool hat" class="product-image" />
+                    <h3 class="product-name">Cool hat</h3>
+                    <p class="product-price">$99.99</p>
+                    <a href="product.html?id=3" class="btn">View details</a>
+                </article>
+                <article class="product-card" data-category="accessories">
+                    <img src="images/product4.png" alt="Canvas Tote Bag" class="product-image" />
+                    <h3 class="product-name">Canvas Tote Bag</h3>
+                    <p class="product-price">$24.99</p>
+                    <a href="product.html?id=4" class="btn">View details</a>
+                </article>
+                <article class="product-card" data-category="electronics">
+                    <img src="images/product5.png" alt="Wireless Earbuds" class="product-image" />
+                    <h3 class="product-name">Wireless Earbuds</h3>
+                    <p class="product-price">$49.99</p>
+                    <a href="product.html?id=5" class="btn">View details</a>
+                </article>
+                <article class="product-card" data-category="electronics">
+                    <img src="images/product6.png" alt="Smartwatch" class="product-image" />
+                    <h3 class="product-name">Smartwatch</h3>
+                    <p class="product-price">$15.99</p>
+                    <a href="product.html?id=6" class="btn">View details</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Mini Store.</p>
+    </footer>
+</body>
+
+</html>

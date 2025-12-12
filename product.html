@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Mini Store - Product Detail</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-area">
+            <h1>My Mini Store</h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <!-- Dark mode toggle -->
+        <button id="dark-mode-toggle" class="btn header-btn">Dark Mode</button>
+    </header>
+
+    <main>
+        <p><a href="products.html">&larr; Back to Shop</a></p>
+
+        <!-- Add an id so JS knows we’re on the product page -->
+        <section class="product-detail" id="product-detail">
+            <div class="product-image">
+                <img id="prod-image" src="" alt="Product image">
+            </div>
+
+            <div class="product-info">
+                <h2 id="prod-name">Product Name</h2>
+                <p class="price" id="prod-price">$0.00</p>
+
+                <p class="description" id="prod-description">
+                    Product description will go here.
+                </p>
+
+                <h3>Features</h3>
+                <ul id="prod-features">
+                    <!-- JS will fill this -->
+                </ul>
+
+                <p>
+                    <button class="btn add-to-cart" id="detail-add-to-cart">Add to Cart</button>
+                </p>
+            </div>
+        </section>
+
+        <section class="product-reviews">
+            <h2>Customer Reviews</h2>
+            <ul class="review-list" id="prod-reviews">
+                <!-- JS will fill this -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Mini Store.</p>
+    </footer>
+</body>
+
+</html>

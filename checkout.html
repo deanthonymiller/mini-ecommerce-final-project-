@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Mini Store - Checkout</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-area">
+            <h1>My Mini Store</h1>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="products.html" class="nav-link">Shop</a>
+            <a href="cart.html" class="nav-link">Cart</a>
+            <a href="checkout.html" class="nav-link">Checkout</a>
+            <a href="about.html" class="nav-link">About</a>
+        </nav>
+        <button id="dark-mode-toggle" class="btn header-btn">Dark Mode</button>
+    </header>
+    <main>
+        <section class="cart-section">
+            <h2>Order Summary</h2>
+            <p id="checkout-summary">
+                Loading your cart...
+            </p>
+        </section>
+
+        <section class="checkout-form-section">
+            <h2>Shipping and Payment</h2>
+            <form id="checkout-form" class="checkout-form">
+                <label>
+                    <input type="text" id="checkout-name" required placeholder="Full Name">
+                </label>
+                <label>
+                    Email:
+                    <input type="email" id="checkout-email" required placeholder="Email Address">
+                </label>
+                <label>
+                    Address:
+                    <input type="text" id="checkout-address" required placeholder="Shipping Address">
+                </label>
+                <div class="checkout-row">
+                    <label>
+                        City:
+                        <input type="text" id="checkout-city" required placeholder="City">
+                    </label>
+                    <label>
+                        ZIP Code:
+                        <input type="text" id="checkout-zip" required placeholder="ZIP Code">
+                    </label>
+                
+                    <label>
+                        State:
+                        <input type="text" id="checkout-state" required placeholder="State">
+                    </label>
+                </div>
+
+                <label>
+                    Payment Method:
+                    <select id="checkout-payment">
+                        <option value="card">Credit / Debit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" id="checkout-newsletter">
+                    Sign me up for store updates and deals
+                </label>
+
+                <label>
+                    Order Notes (optional):
+                    <textarea id="checkout-notes" rows="3"></textarea>
+                </label>
+
+                <button type="submit" class="btn">Place Order</button>
+            </form>
+        </section>
+    </main>
+
+</html>

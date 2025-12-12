@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mini Store</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-area" style="text-align:center">
+            <!-- <img src="images/mini-store-logo.png" alt="Mini Store Logo" class="logo" /> -->
+            <h1 class="store-name">Mini Store</h1>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="products.html" class="nav-link">Shop</a>
+            <a href="cart.html" class="nav-link">Cart</a>
+            <a href="checkout.html" class="nav-link">Checkout</a>
+            <a href="about.html" class="nav-link">About</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Welcome to my Mini Store</h2>
+            <p>Your one-stop shop for all your needs!</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        </section>
+        <section class="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <h3>Clothing</h3>
+                    <p>Warm hoodies, shirts, and more</p>
+                    <a href="products.html?category=clothing" class="btn">View Clothing</a>
+                </div>
+                <div class ="category-card">
+                    <h3>Accessories</h3>
+                    <p>Hats, bags, and other essentials</p>
+                    <a href="products.html?category=accessories" class="btn">View Accessories</a>
+                </div>
+                <div class="category-card">
+                    <h3>Electronics</h3>
+                    <p>Gadgets and devices for everyday use</p>
+                    <a href="products.html" class="btn">View Electronics</a>
+                </div>
+            </div>
+        </section>
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="images/product1.png" alt="Red Hoodie" class="product-image" />
+                    <h3 class="product-name">Red Cozy Hoodie</h3>
+                    <p class="product-price">$39.99</p>
+                    <a href="product.html?id=1" class="btn">View details</a>
+                </article>
+                <article class="product-card">
+                    <img src="images/product2.png" alt="Blue T-shirt" class="product-image" />
+                    <h3 class="product-name">Blue T-shirt</h3>
+                    <p class="product-price">$19.99</p>
+                    <a href="product.html?id=2" class="btn">View details</a>
+                    </article>
+                <article class="product-card">
+                    <img src="images/product3.png" alt="Cool Cap" class="product-image" />
+                    <h3 class="product-name">Cool Cap</h3>
+                    <p class="product-price">$99.99</p>
+                    <a href="product.html?id=3" class="btn">View details</a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mini Store.</p>
+    </footer>
+</body>
+</html>
